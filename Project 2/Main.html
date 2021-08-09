@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"  crossorigin="anonymous">
+  <title>Document</title>
+</head>
+  
+<body>
+  <div class="bigContainer">
+
+
+  <div class="pics">
+     <img src="/photo-1508179522353-11ba468c4a1c.jpg" alt="">
+
+     <img src="https://images.unsplash.com/photo-1530919424169-4b95f917e937?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="">
+
+     <img src= "https://images.unsplash.com/photo-1605960891458-94e7f89523b0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTU5fHxuZW9uJTIwaHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+  </div>
+ 
+
+
+    <main>
+    <div class="logo">
+      <h4>Ruzek.</h4>
+    </div>
+    <h3>dark lights <span >presence <span> </span></h3>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus itaque, asperiores, autem vitae laboriosam dolore aliquam reiciendis vero neque deleniti temporibus debitis.</p>
+
+     <div class="columns">
+        <div class="column">
+          <h5>Lorem, ipsum.</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis!</p>
+        </div>
+        <div class="column2">
+          <h5>Lorem, ipsum.</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis!</p>
+        </div>
+     </div>
+  
+</main>
+
+  <!-- side bar -->
+    <img class="menu" src="/menu.svg" alt="open menu button" >
+   <div class="sidebar">
+    <h4>menu</h4>
+
+     <ul>        
+       <li>Home</li>
+       <li>Services </li>
+       <li>About us</li>
+       <li> contact us</li>
+       <li> Our work</li>
+       <li> testimonials</li>    
+     </ul>
+
+     <div class="acc">
+      <i class="fab fa-twitter"></i> 
+
+      <i class="fab fa-instagram"></i>
+     </div>
+     
+     
+     
+     <img class="close" src="/close.svg" alt="close mune button">
+     <div class="line"></div>
+
+   </div>
+
+
+  </div>
+
+
+ 
+</body>
+<script>
+ 
+
+// animtaions 
+
+
+
+const container = document.querySelector(".bigContainer")
+const closebtn = document.querySelector(".close")
+document.querySelector(".menu").addEventListener("click", start, false);
+
+  function start() {
+      requestAnimationFrame(function(time) {
+      document.querySelector(".bigContainer").className = "bigContainer bigContainerActive";
+  });
+}
+
+
+closebtn.addEventListener("click", close )
+function close(){
+  container.classList.add("RemovebigContainerActive")
+}
+
+
+
+// example
+// document.querySelector(".menu").addEventListener("click", start, false);
+
+//   function start() {
+//   document.querySelector(".bigContainer").className = "bigContainer";
+//   window.requestAnimationFrame(function(time) {
+//     window.requestAnimationFrame(function(time) {
+//       document.querySelector(".bigContainer").className = "bigContainer bigContainerActive";
+//     });
+//   });
+// }
+
+
+</script>
+</html>
+
+
